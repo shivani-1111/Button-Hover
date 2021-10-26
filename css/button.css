@@ -1,0 +1,59 @@
+body {
+    height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    place-content: center
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.add {
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    padding: 20px;
+    font-size: 22px;
+    position: relative;
+    border-radius: 50px;
+    background: #fffcf3
+}
+
+.add::before {
+    -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.add .addText {
+    color: #252525;
+    mix-blend-mode: multiply
+}
+
+.add::before {
+    border-radius: 50px;
+    width: 30%;
+    background: orange
+}
+
+.add:hover::before {
+    background: orange;
+    width: 100%
+}
+
+.arrow {
+    margin-right: 24px
+}
+
+
+/*# sourceMappingURL=button.css.map */
